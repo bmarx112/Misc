@@ -1,5 +1,5 @@
 import os
-
+#Deletes all files in specified directory with a '.bak' extension
 while True:
 
     st = input("Enter Directory Path:")
