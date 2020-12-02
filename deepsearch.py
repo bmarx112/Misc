@@ -1,5 +1,7 @@
 import os
 import re
+#Kinda janky code that opens every file in a specified path, and checks to see if a keyword exists. Some files arent supported (.xlsx,.doc) etc
+#Please don't run on massive directories unless you are confident your computer can handle it... mine couldn't.
 
 while True:
     st = input("Enter Directory Path: ")
@@ -36,7 +38,7 @@ while True:
                     #print(bad_ext)
                     continue
 
-    print(bad_ext)
+    #print(bad_ext)
     if len(match)>0:
             for i in match:
                 print(i)
